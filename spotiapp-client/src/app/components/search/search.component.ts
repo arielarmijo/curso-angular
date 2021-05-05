@@ -16,11 +16,11 @@ export class SearchComponent {
   }
 
   buscar(termino: string): void {
-    console.log('Buscando a ' + termino);
+    //console.log('Buscando a ' + termino);
     this.loading = true;
     this.spotify.getArtists(termino)
       .subscribe(data => {
-        console.log(data);
+        //console.log(data);
         this.artists = data;
         this.loading = false;
       });
